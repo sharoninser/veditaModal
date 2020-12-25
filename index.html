@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedita Modal</title>
+    <link rel="stylesheet" href="css/vedita-modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div id="popupOne" class="popup-window">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur, beatae tempora error odit minus ducimus porro animi omnis explicabo eaque dignissimos cumque nam libero nostrum placeat qui iure, natus quia sunt ipsa optio at suscipit eveniet. Odio, natus sequi sapiente numquam nemo hic soluta autem ducimus, unde, necessitatibus reprehenderit!</p>
+        </div>
+
+        <div id="popupTwo" class="popup-window">
+            <p>Lorem ipsum</p>
+        </div>
+        <div id="popupThree" class="popup-windows">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam recusandae et culpa atque ea debitis libero quisquam reiciendis eveniet.</p>
+        </div>
+
+
+        <a href="javascript:;" data-src="#popupOne" data-vmodal>Открыть popupOne</a>
+        <a href="javascript:;" data-src="#popupTwo" data-vmodal>Открыть popupTwo</a>
+        <a href="javascript:;" data-src="#popupThree" data-vmodal>Открыть popupThree</a>
+    </main>
+
+    <script src="js/vedita-modal.js"></script>
+    <script type="text/javascript">
+        var modal = new VeditaModal('.popup-window');
+        var modals = new VeditaModal('.popup-windows', {
+            closeBtn: '.new-vmodal-close',
+        }); 
+    </script>
+</body>
+</html>
